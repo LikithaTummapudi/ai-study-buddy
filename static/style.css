@@ -7,6 +7,14 @@ html{
     font-family: "Exo 2", sans-serif;
 }
 
+#Features .card{
+    transition: 0.2s ease;
+}
+
+#Features .card:hover{
+    transform: translateY(-5px);
+}
+
 #responseText{
     white-space: pre-wrap;
 }
