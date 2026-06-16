@@ -41,7 +41,7 @@ AI Study Buddy is an AI-powered web application designed to help students learn 
 1. Clone the repository.
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_LINK
+git clone https://github.com/LikithaTummapudi/ai-study-buddy.git
 ```
 
 2. Install dependencies.
