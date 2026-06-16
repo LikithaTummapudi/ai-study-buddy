@@ -12,6 +12,7 @@ client = genai.Client(
     api_key=os.getenv("GEMINI_API_KEY")
 )
 
+
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -106,5 +107,5 @@ def flashcards():
     })
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
 
