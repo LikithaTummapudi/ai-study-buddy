@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<!--Linking CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/robot.svg') }}">
+</head>
+
+<body style="background-color:rgb(170, 204, 228);">
+
+    <section id="header">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+                    <img src="/static/images/book (1).svg" alt="Book Icon" height="30px" /><use xlink:href="#bootstrap"></use>
+                    <span class="fs-4"> Study Buddy</span> 
+                </a> 
+                <ul class="nav nav-pills"> 
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page" 
+                        style="background-color: rgb(53, 88, 114);">Home</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li> 
+                    <!--<li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>--> 
+                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li> 
+                </ul> 
+            </header> 
+        </div>
+    </section>
+
+    <section id="Home">
+        <div class="px-4 py-5 my-5 text-center"> 
+            <img class="d-block mx-auto mb-4" src="/static/images/robot.svg" 
+                alt="ROBO Icon" width="72" height="57"> 
+            <h1 class="display-5 fw-bold text-body-emphasis">AI Study Buddy</h1> 
+            <div class="col-lg-6 mx-auto"> 
+                <p class="lead mb-4">An AI-powered learning assistant that helps students understand concepts, 
+                    summarize notes, generate quizzes, and create flashcards instantly.
+                </p> 
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3" 
+                            fdprocessedid="u88d5n">Chat With AI</button> 
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4" 
+                            fdprocessedid="oj2sh">Explore Features</button> 
+                </div> 
+            </div> 
+        </div>
+    </section>
+
+    <section is="Features">
+        <div class="container px-4 py-5"> 
+            <h2 class="pb-2 border-bottom">What Can Study Buddy Do?</h2> 
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"> 
+                <div class="col d-flex flex-column align-items-start gap-2"> 
+                    <h2 class="fw-bold text-body-emphasis">Everything a Student Needs in One Place</h2> 
+                    <p class="text-body-secondary">Whether you're preparing for exams, revising difficult concepts, or 
+                        organizing study material, AI Study Buddy provides instant AI-powered assistance. From concept explanations 
+                        and note summaries to practice quizzes and flashcards, it offers the essential tools students need to learn effectively in one platform.</p> 
+                    <a href="#" class="btn btn-light btn-lg">Chat With AI</a> 
+                </div> 
+                <div class="col"> 
+                    <div class="row row-cols-1 row-cols-sm-2 g-4"> 
+                        <div class="col d-flex flex-column gap-2">                             
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">
+                                <button type="button" class="btn btn-light">📘 </button> Explain Topic</h4> 
+                            <p class="text-body-secondary">Understand difficult concepts in simple language.</p> 
+                        </div> 
+                        <div class="col d-flex flex-column gap-2">                            
+                            <h4 class="fw-semibold mb-0 text-body-emphasis"><button type="button" class="btn btn-light">📝</button>  Summarize Notes</h4> 
+                            <p class="text-body-secondary">Convert lengthy notes into concise summaries.</p> 
+                        </div> 
+                        <div class="col d-flex flex-column gap-2">                             
+                            <h4 class="fw-semibold mb-0 text-body-emphasis"><button type="button" class="btn btn-light">❓ </button>  Generate Quiz</h4> 
+                            <p class="text-body-secondary">Create practice questions for quick revision.</p> 
+                        </div> 
+                        <div class="col d-flex flex-column gap-2">                            
+                            <h4 class="fw-semibold mb-0 text-body-emphasis"><button type="button" class="btn btn-light">🧠 </button> Flashcards</h4> 
+                            <p class="text-body-secondary">Generate flashcards for effective memorization.</p> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+
+    <section id="workspace" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left Panel -->
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h3 class="mb-4">Study Workspace</h3>
+                        <label class="form-label">
+                            Topic
+                        </label>
+                        <input
+                            id="topicInput"
+                            type="text"
+                            class="form-control mb-3"
+                            placeholder="Enter Topic"
+                        >
+                        <label class="form-label">
+                            Notes
+                        </label>
+                        <textarea
+                            id="notesInput"
+                            class="form-control mb-4"
+                            rows="8"
+                            placeholder="Paste your notes here..."
+                        ></textarea>
+                        <div class="d-grid gap-2">
+                            <button id="explainBtn" class="btn btn-primary">
+                                📘 Explain Topic
+                            </button>
+                            <button id="summarizeBtn" class="btn btn-outline-primary">
+                                📝 Summarize Notes
+                            </button>
+                            <button id="quizBtn" class="btn btn-outline-primary">
+                                ❓ Practice Quiz
+                            </button>
+                            <button id="flashcardBtn" class="btn btn-outline-primary">
+                                🧠 Flashcards
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header bg-white">
+                        <h4 class="mb-0">AI Response</h4>   
+                    </div>
+                    <div class="card-body">
+                        <div class="chat-box">
+                            <div class="ai-message">
+                                <small class="text-secondary">
+                                    AI Study Buddy
+                                </small>
+                                <pre id="responseText" class="mt-2">Hello! I'm ready to help you learn.
+                                    Enter a topic or paste notes to begin.</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="About">
+        <div class="my-5"> 
+            <div class="p-5 text-center bg-body-tertiary"> 
+                <div class="container py-5" style="background-color:rgb(170, 204, 228);"> 
+                    <h1 class="text-body-emphasis">About</h1> 
+                    <p class="col-lg-8 mx-auto lead">AI Study Buddy is an AI-powered learning assistant designed to help 
+                        students study more effectively and independently. Traditional learning resources often provide 
+                        lengthy explanations or require significant time to search through multiple sources. AI Study Buddy 
+                        simplifies this process by delivering instant concept explanations, concise note summaries, practice quizzes, 
+                        and flashcards tailored to the student's needs. By leveraging generative AI,the platform aims to make learning 
+                        more accessible, engaging, and efficient.</p> 
+                </div> 
+            </div> 
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container" > 
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top b2"> 
+                <div class="col-md-4 d-flex align-items-center"> 
+                     </a><span class="mb-3 mb-md-0 text-body-secondary">© 2026 Study Buddy, Inc</span> 
+                </div> 
+            </footer> 
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

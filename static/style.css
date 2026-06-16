@@ -1,0 +1,54 @@
+.header{
+    color: black;
+    font-family: "Exo 2", sans-serif;
+}
+
+#responseText{
+    white-space: pre-wrap;
+}
+
+.nav-link{
+    color: black;
+    font-family: "Exo 2", sans-serif;
+}
+
+.my-5 {
+    background-color:rgb(170, 204, 228) ;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+#workspace .card{
+    border-radius:20px;
+}
+
+.chat-box{
+    min-height:450px;
+}
+
+.ai-message{
+    background:#F7F8F0;
+    padding:20px;
+    border-radius:15px;
+    border-left:5px solid #355872;
+}
+
+.btn-primary{
+    background:#355872;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#2b465a;
+}
+
+.btn-outline-primary{
+    color:#355872;
+    border-color:#355872;
+}
+
+.btn-outline-primary:hover{
+    background:#355872;
+    border-color:#355872;
+}
+
